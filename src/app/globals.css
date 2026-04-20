@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #5C3D2E;
+  --foreground: rgba(255, 255, 255, 0.9);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  /* Hide standard scrollbar for scrollytelling */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+::selection {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
